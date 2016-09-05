@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+	padding-top: 40px;
+}
+
+.ch-top-menu{
+	font-size: 16px;
+	font-family: "Myriad Pro";
+	color: rgb(151, 169, 178);
+	line-height: 1.688;
+
+	ul{
+		display: table;
+		width: 100%;
+	}
+	li{
+		display: table-cell;
+		padding-right: 100px;
+		word-wrap: nowrap;
+		text-align: left;
+	}
+	li:nth-child(2){
+		width: 100%;
+	} 
+	li:last-child{
+		padding-right: 0;
+	} 
+}
+
+.ch-main-logo-img{
+	margin-top: -70px;
+}
+
+.ch-main-logo{
+	background: url(../img/top-bg.png) center top no-repeat;
+	margin-top: 30px;
+	padding-top: 418px;
+	font-size: 18px;
+	font-family: "Open Sans";
+	color: rgb(26, 26, 54);
+	line-height: 1.444;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.highlight{
+	color: #29abe2;
+}
+
+.ch-tab-menu{
+	
+	margin-top: 65px;
+	position: relative;
+
+	&:before{
+		content: attr(data-lang);
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-size: 14px;
+		font-family: "Open Sans";
+		color: rgb(152, 170, 179);
+		line-height: 1.857;
+		text-align: center;
+
+	}
+
+	.print:after{
+		content: url(../img/print.png);
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	ul{
+		margin-left: auto;
+		margin-right: auto;
+		display: table;
+	}
+
+	li{
+		height: 45px;
+		float: left;
+		margin-right: 60px;
+
+		a{
+			font-size: 14px;
+			font-family: "Open Sans";
+			color: rgb(59, 70, 80);
+			line-height: 1.857;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+	li.active{ 
+		border-bottom: 3px solid #ff4557;
+		a{
+			color: rgb(255, 69, 87);
+		}
+	}
+	li:last-child{
+		margin-right: 0;
+	}
+}
+
+.ch-items{
+	background: #e8f0f5;
+	padding: 45px;
+
+	.row div{
+		max-height: 388px;
+		height: 388px;
+		overflow: hidden;
+		margin-bottom: 45px;
+	}
+	img{		
+		box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.22);
+		min-width: 100%;
+	}
+}
