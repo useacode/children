@@ -6858,7 +6858,7 @@ body {
   padding: 45px;
   padding-bottom: 80px;
   background: url(../img/things-bg.png) center no-repeat, #e8f0f5;
-  background-position: left 0 bottom -43%;
+  background-position: left 50px bottom -300px;
 }
 .ch-items .row div {
   height: 388px;
