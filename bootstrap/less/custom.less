@@ -114,8 +114,11 @@ body {
 }
 
 .ch-items{
-	background: #e8f0f5;
+	background: url(../img/things-bg.png) center no-repeat,
+                #e8f0f5;
+    background-position: left 0% bottom -43%;
 	padding: 45px;
+    padding-bottom: 80px;
 
 	.row div{
 		max-height: 388px;
@@ -128,3 +131,98 @@ body {
 		min-width: 100%;
 	}
 }
+
+.btn{
+    background: #29abe1;
+    color: #ffffff;
+    -moz-border-radius: 28px;
+	-webkit-border-radius: 28px;
+    border-radius: 28px;
+	border: 1px solid #ffffff;
+    width: 185px;
+    margin: 0 auto;
+    padding: 13px 0px 10px 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Myriad Pro";
+	font-size: 15px;
+}
+
+.btn:hover{
+	background-color:#57c5f2;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.ch-bottom{
+    margin-top: 50px;
+    background: url(../img/things-bg.png) center no-repeat,
+                #ffffff;
+    background-position: left 50% top -99px;
+    h2{
+        color: #335478;
+	    font-size: 36px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    span{
+        color: #29abe2;
+    }
+    p{
+        font-size: 16px;
+        color: #1a1a36;
+    }
+    img{
+        padding: 60px 50px;
+        border-bottom: 1px solid #dedddd;
+    }
+    .ch-recommend{
+        letter-spacing: 1px;
+        font-weight: 100;
+    }
+    .ch-help{
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    .ch-social{
+        margin-bottom: 90px;
+        img{
+            padding: 0 15px;
+            border: none;
+        }
+    }
+}
+
+footer{
+    border-top: 1px solid #ff4556;
+    font-size: 14px;
+	font-family: "Open Sans";
+	color: #97a9b2;
+    padding: 27px 0;
+	line-height: 1.688;
+
+	ul{
+		display: table;
+		width: 100%;
+	}
+	li{
+		display: table-cell;
+		padding-right: 50px;
+		word-wrap: nowrap;
+		text-align: left;
+	}
+	li:nth-child(2){
+		width: 100%;
+	}
+    li:first-child{
+		padding-left: 40px;
+	} 
+	li:last-child{
+		padding-right: 40px;
+	} 
+    a, a:hover{
+        color: #97a9b2;
+    }
+}
+
+
