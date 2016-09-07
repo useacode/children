@@ -163,7 +163,7 @@ module.exports = function (grunt) {
         },
         src: 'less/bootstrap.less',
         dest: '../assets/css/<%= pkg.name %>.css'
-      },
+      }/*,
       compileTheme: {
         options: {
           strictMath: true,
@@ -174,7 +174,7 @@ module.exports = function (grunt) {
         },
         src: 'less/theme.less',
         dest: '../assets/css/<%= pkg.name %>-theme.css'
-      }
+      }*/
     },
 
     autoprefixer: {
