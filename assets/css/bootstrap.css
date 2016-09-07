@@ -6778,6 +6778,8 @@ body {
 }
 .ch-top-menu li {
   display: table-cell;
+  float: none;
+  padding: 0 !important;
   padding-right: 100px;
   text-align: left;
   word-wrap: nowrap;
@@ -6788,8 +6790,30 @@ body {
 .ch-top-menu li:last-child {
   padding-right: 0;
 }
+.nav > li > a {
+  display: inline;
+  padding: 0 40px;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: initial;
+}
+.navbar-toggle .icon-bar {
+  background-color: #453682;
+}
+.navbar-toggle {
+  float: left;
+  margin-top: -7px;
+  border: 1px solid #453682;
+  border-radius: 3px;
+}
 .ch-main-logo-img {
-  margin-top: -70px;
+  margin-top: -140px;
+}
+@media (max-width: 1000px) {
+  .ch-main-logo-img {
+    visibility: hidden;
+  }
 }
 .ch-main-logo {
   padding-top: 418px;
