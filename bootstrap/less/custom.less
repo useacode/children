@@ -58,18 +58,25 @@ body {
 }
 
 .ch-main-logo-img{
-	margin-top: -140px;
+	margin-top: -95px;
+    max-width: 100%;
+    max-height: 100%;
 }
-
-@media (max-width: 1000px){
+.ch-display-table{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 1024px){
     .ch-main-logo-img{
-        visibility: hidden;
+        max-width: 75%;
+        max-height: 75%;
     }
 }
 
 .ch-main-logo{
 	background: url(../img/top-bg.png) center top no-repeat;
-	margin-top: 30px;
+	//margin-top: 30px;
 	padding-top: 418px;
 	font-size: 18px;
 	font-family: "Open Sans";
@@ -155,8 +162,8 @@ body {
 	}
 	img{		
 		box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.22);
-		min-width: 100%;
-		max-width: 100%;
+		//min-width: 100%;
+		//max-width: 100%;
 	}
 }
 
