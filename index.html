@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+    <script src="assets/js/bootstrap.min.js"></script> 
 </head>
 <body>
     <div class="container">
         <header class="text-center">
             <nav class="ch-top-menu navbar">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target='.navbar-collapse'>
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -26,7 +28,9 @@
                     </ul>
                 </div>
             </nav>
+            <div class="ch-display-table">
             <img class="ch-main-logo-img" src="assets/img/main-logo.png"/>
+            </div>
             <p class="ch-main-logo">
                 С буковками можно занять детей с пользой. <br/> а можно и <span class="highlight">нарисовать</span> для них что-ниудь интересное
             </p>
@@ -43,15 +47,15 @@
         </section>
         <main>
             <section class="ch-items text-center">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/1.png" alt=""></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/2.png" alt=""></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/3.png" alt=""></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/4.png" alt=""></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/5.png" alt=""></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/6.png" alt=""></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/7.png" alt=""></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/8.png" alt=""></div>
+                <div data-equal="img" class="row">
+                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/1.png" alt=""></div>
+                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/2.png" alt=""></div>
+                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/3.png" alt=""></div>
+                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/4.png" alt=""></div>
+                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/5.png" alt=""></div>
+                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/6.png" alt=""></div>
+                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/7.png" alt=""></div>
+                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/8.png" alt=""></div>
                 </div>
                 <a href="#" class="btn">открыть еще</a>
             </section>
@@ -60,7 +64,7 @@
                <p>Кстати, мы пробуем <span>creative commons.</span></p>
                <p>Поэтому некоторые наши карточки можно свободно печатать<br/>
                     и некоммерчески использовать на радость детям</p>
-                <img src="assets/img/printer.png" alt=""/>
+                <img class="ch-printer" src="assets/img/printer.png" alt=""/>
                 <h2 class="ch-recommend">посоветуйте нас друзьям</h2>
                 <p class="ch-help">Нам нужна ваша помощь</p>
                 <div class="ch-social">
@@ -71,14 +75,18 @@
             </section>
         </main>
         <footer>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled ch-footer-menu">
                     <li><a href="#"><img src="assets/img/footer-logo.png" alt=""></a></li>
-                    <li>&copy; 2015 — 2016</li>
+                    <li>&copy;&nbsp;2015&nbsp;—&nbsp;2016</li>
                     <li><a href="#">Стать&nbsp;автором</a></li>
                     <li><a href="#">О&nbsp;проекте</a></li>
                     <li><a href="#">Зарегистрироваться</a></li>
             </ul>
         </footer>
     </div>
+    <script src="assets/js/jquery.equalheights.min.js"></script>
+    <script>
+		$('#equalheight').equalHeights();
+	</script>
 </body>
 </html>
