@@ -106,11 +106,13 @@ a:hover{
 	.ch-main-logo-img{
 	    position: absolute;
 	    top: 34px;
-	    left: 0;
+	    left: 20px;
 	    right: 0;
 	    margin-left: auto;
 	    margin-right: auto;
 	    margin-top: 0;
+        max-width: 65%;
+        max-height: 65%;
 	}
 }
 
@@ -206,6 +208,12 @@ a:hover{
 	li:last-child{
 		margin-right: 0;
 	}
+    
+    @media (max-width: @screen-sm){
+	    li{
+	        margin-right: 30px;
+	    }
+    }
 }
 
 .ch-items{
@@ -223,6 +231,8 @@ a:hover{
 	}
 	img{		
 		box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.22);
+        width: 244px;
+        height: 366px;
 		//min-width: 100%;
 		//max-width: 100%;
 	}
