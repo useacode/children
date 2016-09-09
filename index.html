@@ -32,7 +32,7 @@
             <img class="ch-main-logo-img" src="assets/img/main-logo.png"/>
             </div>
             <p class="ch-main-logo">
-                С буковками можно занять детей с пользой. <br/> а можно и <span class="highlight">нарисовать</span> для них что-ниудь интересное
+                С буковками можно занять детей с пользой. <br/> а можно и <span class="highlight"><a href="#">нарисовать</a></span> для них что-ниудь интересное
             </p>
         </header>
         <section>
@@ -42,26 +42,26 @@
                     <li class="active"><a href="#">новое</a></li>
                     <li><a href="#">популярное</a></li>
                 </ul>
-                <a href="#" class="print"></a>
+                <a href="#" class="ch-print"></a>
             </nav>
         </section>
         <main>
             <section class="ch-items text-center">
                 <div data-equal="img" class="row">
-                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/1.png" alt=""></div>
-                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/2.png" alt=""></div>
-                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/3.png" alt=""></div>
-                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/4.png" alt=""></div>
-                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/5.png" alt=""></div>
-                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/6.png" alt=""></div>
-                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/7.png" alt=""></div>
-                    <div id="equalheight" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><img src="assets/img/items/8.png" alt=""></div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 equalheight"><img src="assets/img/items/1.png" alt=""></div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 equalheight"><img src="assets/img/items/2.png" alt=""></div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 equalheight"><img src="assets/img/items/3.png" alt=""></div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 equalheight"><img src="assets/img/items/4.png" alt=""></div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 equalheight"><img src="assets/img/items/5.png" alt=""></div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 equalheight"><img src="assets/img/items/6.png" alt=""></div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 equalheight"><img src="assets/img/items/7.png" alt=""></div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 equalheight"><img src="assets/img/items/8.png" alt=""></div>
                 </div>
-                <a href="#" class="btn">открыть еще</a>
+                <div><a href="#" class="btn ch-btn-alphabet">открыть еще</a></div>
             </section>
             <section class="ch-bottom text-center">
                <h2>напечатайте</h2>
-               <p>Кстати, мы пробуем <span>creative commons.</span></p>
+                <p>Кстати, мы пробуем <span class="highlight"><a href="#">creative commons.</a></span></p>
                <p>Поэтому некоторые наши карточки можно свободно печатать<br/>
                     и некоммерчески использовать на радость детям</p>
                 <img class="ch-printer" src="assets/img/printer.png" alt=""/>
@@ -86,7 +86,7 @@
     </div>
     <script src="assets/js/jquery.equalheights.min.js"></script>
     <script>
-		$('#equalheight').equalHeights();
+		$('.equalheight').equalHeights();
 	</script>
 </body>
 </html>
