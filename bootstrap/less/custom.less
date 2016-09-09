@@ -32,6 +32,10 @@ a:hover{
 		text-align: left;
         padding: 0 100px 0 0;
         float: none;
+        
+        a:hover{
+			color: @ch-hover-color;
+        }
 	}
 	li:nth-child(2){
 		width: 100%;
@@ -39,11 +43,6 @@ a:hover{
 	li:last-child{
 		padding-right: 0;
 	} 
-    li:hover{
-        a{
-			color: @ch-hover-color;
-		} 
-    }
 }
 
 .nav > li > a {
@@ -99,15 +98,18 @@ a:hover{
 	color: #29abe2;
     
     :hover{
-        color: @ch-hover-color;
+        a{
+          color: @ch-hover-color;  
+        }      
     }
 }
-
 
 .ch-tab-menu{
 	
 	margin-top: 65px;
 	position: relative;
+    //box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 7px 10px -9px rgba(0, 0, 0, 0.5);
 
 	&:before{
 		content: attr(data-lang);
@@ -136,6 +138,7 @@ a:hover{
 	ul{
 		margin-left: auto;
 		margin-right: auto;
+        margin-bottom: 0;
 		display: table;
 	}
 
@@ -153,6 +156,9 @@ a:hover{
 			text-decoration: none;
 			text-transform: uppercase;
 		}
+        a:hover{
+            
+        }
 	}
 	li.active{ 
 		border-bottom: 3px solid @ch-hover-color;
