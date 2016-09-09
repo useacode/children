@@ -25,6 +25,17 @@ a:hover{
 	ul{
 		display: table;
 		width: 100%;
+		overflow: hidden;
+	}
+	@media (max-width: @screen-sm){
+		ul{
+			display: block;
+		}
+	}
+	.in{
+		ul{
+			display: block;
+		}
 	}
 	li{
 		display: table-cell;
@@ -36,6 +47,16 @@ a:hover{
         a:hover{
 			color: @ch-hover-color;
         }
+	}
+	.in{
+		li{
+			display: block;
+		}
+	}
+	@media (max-width: @screen-sm){
+		li{
+			display: block;
+		}
 	}
 	li:nth-child(2){
 		width: 100%;
@@ -80,6 +101,19 @@ a:hover{
         max-width: 75%;
         max-height: 75%;
     }
+}
+@media (max-width: @screen-sm){
+	.ch-main-logo-img{
+	    position: absolute;
+	    top: 34px;
+	    left: 20px;
+	    right: 0;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 0;
+        max-width: 65%;
+        max-height: 65%;
+	}
 }
 
 .ch-main-logo{
@@ -174,6 +208,12 @@ a:hover{
 	li:last-child{
 		margin-right: 0;
 	}
+    
+    @media (max-width: @screen-sm){
+	    li{
+	        margin-right: 30px;
+	    }
+    }
 }
 
 .ch-items{
@@ -184,13 +224,15 @@ a:hover{
     padding-bottom: 80px;
 
 	.row div{
-		max-height: 388px;
-		height: 388px;
+		/*max-height: 388px;
+		height: 388px;*/
 		overflow: hidden;
 		margin-bottom: 45px;
 	}
 	img{		
 		box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.22);
+        width: 244px;
+        height: 366px;
 		//min-width: 100%;
 		//max-width: 100%;
 	}
