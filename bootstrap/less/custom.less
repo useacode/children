@@ -25,6 +25,17 @@ a:hover{
 	ul{
 		display: table;
 		width: 100%;
+		overflow: hidden;
+	}
+	@media (max-width: @screen-sm){
+		ul{
+			display: block;
+		}
+	}
+	.in{
+		ul{
+			display: block;
+		}
 	}
 	li{
 		display: table-cell;
@@ -36,6 +47,16 @@ a:hover{
         a:hover{
 			color: @ch-hover-color;
         }
+	}
+	.in{
+		li{
+			display: block;
+		}
+	}
+	@media (max-width: @screen-sm){
+		li{
+			display: block;
+		}
 	}
 	li:nth-child(2){
 		width: 100%;
@@ -80,6 +101,17 @@ a:hover{
         max-width: 75%;
         max-height: 75%;
     }
+}
+@media (max-width: @screen-sm){
+	.ch-main-logo-img{
+	    position: absolute;
+	    top: 34px;
+	    left: 0;
+	    right: 0;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 0;
+	}
 }
 
 .ch-main-logo{
@@ -184,8 +216,8 @@ a:hover{
     padding-bottom: 80px;
 
 	.row div{
-		max-height: 388px;
-		height: 388px;
+		/*max-height: 388px;
+		height: 388px;*/
 		overflow: hidden;
 		margin-bottom: 45px;
 	}
