@@ -12,6 +12,10 @@ body {
 	padding-top: 40px;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .ch-top-menu{
 	font-size: 16px;
 	font-family: "Myriad Pro";
@@ -35,6 +39,11 @@ body {
 	li:last-child{
 		padding-right: 0;
 	} 
+    li:hover{
+        a{
+			color: @ch-hover-color;
+		} 
+    }
 }
 
 .nav > li > a {
@@ -88,7 +97,12 @@ body {
 
 .highlight{
 	color: #29abe2;
+    
+    :hover{
+        color: @ch-hover-color;
+    }
 }
+
 
 .ch-tab-menu{
 	
@@ -108,11 +122,15 @@ body {
 
 	}
 
-	.print:after{
+	.ch-print:after{
 		content: url(../img/print.png);
 		position: absolute;
 		right: 0;
 		top: 0;
+	}
+    
+    .ch-print:hover:after{
+		content: url(../img/print-hover.png);
 	}
 	
 	ul{
@@ -137,11 +155,16 @@ body {
 		}
 	}
 	li.active{ 
-		border-bottom: 3px solid #ff4557;
+		border-bottom: 3px solid @ch-hover-color;
 		a{
 			color: rgb(255, 69, 87);
 		}
 	}
+    li:hover{
+        a{
+			color: @ch-hover-color;
+		}     
+    }
 	li:last-child{
 		margin-right: 0;
 	}
@@ -167,13 +190,16 @@ body {
 	}
 }
 
-.btn{
+.ch-open-more{
+    
+}
+
+.ch-btn-alphabet{
     background: #29abe1;
     color: #ffffff;
     border-radius: 28px;
 	border: 1px solid #ffffff;
     width: 185px;
-    margin: 0 auto;
     padding: 13px 0px 10px 0px;
     text-transform: uppercase;
     text-decoration: none;
@@ -181,10 +207,10 @@ body {
 	font-size: 15px;
 }
 
-.btn:hover{
-	background-color:#57c5f2;
+.ch-btn-alphabet:hover{
+	background-color: @ch-hover-color;
     color: #ffffff;
-    border: 1px solid #ffffff;
+    border: 1px solid @ch-hover-color;
 }
 
 .ch-bottom{
@@ -197,9 +223,6 @@ body {
 	    font-size: 36px;
         font-weight: 300;
         text-transform: uppercase;
-    }
-    span{
-        color: #29abe2;
     }
     p{
         font-size: 16px;
