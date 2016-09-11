@@ -1,0 +1,60 @@
+
+ch-hover{
+	position: relative;
+	display: inline-block;
+}
+
+.ch-hover-menu{
+	position: absolute;
+	left: -30px;
+    top: 0;
+	display: none;
+	z-index: 1;
+	padding-top: 45px;
+}
+.ch-hover-content{
+	display: table;
+	background: @ch-hover-color;
+
+    padding: 20px 15px 15px 15px;
+
+    &:before{
+	    border: 10px solid transparent;
+	    border-bottom-color: #ff4557;
+	    content: '';
+	    position: absolute;
+	    top: 26px;
+	    left: 30px;
+    }
+
+	> li{
+		font-size: 14px;
+		font-family: "Open Sans";
+		color: rgb(255, 255, 255);
+		line-height: 3.429;
+		display: table-cell;
+		
+		> a{
+			color: rgb(255, 255, 255);
+			margin-right: 15px;
+			margin-left: 15px; 
+			padding-bottom: 7px;
+		}
+	}
+	> li.active, > li:hover{
+		> a {	
+			border-bottom: 3px solid #ffffff;
+		}
+	}
+	> li:last-child{
+	}
+	
+	
+}
+
+.ch-hover:hover{ 
+	.ch-hover-menu{
+		display: table;
+	}
+}
+
