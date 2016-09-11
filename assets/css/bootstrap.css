@@ -6835,7 +6835,7 @@ a:hover {
 .highlight {
   color: #29abe2;
 }
-.highlight :hover a {
+.highlight:hover a {
   color: #ff4557;
 }
 .ch-tab-menu {
@@ -7017,5 +7017,84 @@ footer a:hover {
     text-align: center;
     padding-right: 0;
   }
+}
+.ch-enter {
+  background: #e8f0f5;
+  box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.32);
+}
+.ch-enter .ch-enter-caption {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.ch-enter .ch-enter-caption .ch-enter-text {
+  font-size: 40px;
+  font-family: "Open Sans";
+  color: #335478;
+  line-height: 1.444;
+}
+.ch-enter .ch-enter-caption .ch-enter-reg {
+  font-size: 16px;
+  font-family: "Myriad Pro";
+}
+.ch-enter .ch-enter-caption .ch-enter-reg a {
+  color: #29abe2;
+}
+.ch-enter .ch-enter-caption span {
+  margin-right: 190px;
+}
+.ch-enter .ch-enter-caption span:last-child {
+  margin-right: 0;
+}
+.ch-enter .ch-enter-form {
+  background: #ffffff;
+  display: block;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  padding: 40px;
+}
+.ch-enter .form-group {
+  text-align: left;
+  margin-bottom: 45px;
+}
+.ch-enter .form-group label {
+  font-family: "Open Sans";
+  font-size: 15px;
+  color: #303f4d;
+}
+.ch-enter .ch-form-bottom {
+  display: block;
+  width: 100%;
+}
+.ch-enter .ch-form-bottom .ch-form-button {
+  display: block;
+  float: left;
+}
+.ch-enter .ch-form-bottom .ch-forgot-pass {
+  display: block;
+  float: right;
+}
+.ch-enter .ch-form-footer {
+  display: table;
+}
+.ch-input {
+  border: none;
+  border-bottom: 1px solid #c2d3dd;
+  border-radius: 0;
+  box-shadow: none;
+}
+.ch-input:focus {
+  box-shadow: none;
+}
+.ch-btn-submit {
+  background: #ff4557;
+  color: #ffffff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 15px 28px;
+  font-family: "Open Sans";
+  font-size: 18px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
