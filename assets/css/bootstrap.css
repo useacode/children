@@ -6736,13 +6736,16 @@ a:hover {
 .ch-top-menu {
   font-size: 16px;
   font-family: "Myriad Pro";
-  color: #97a9b2;
+  color: #337ab7;
   line-height: 1.688;
 }
-.ch-top-menu ul {
+.ch-top-menu > ul {
   display: table;
   width: 100%;
   overflow: hidden;
+}
+.ch-top-menu span:hover {
+  color: #ff4557;
 }
 @media (max-width: 768px) {
   .ch-top-menu ul {
@@ -6752,15 +6755,12 @@ a:hover {
 .ch-top-menu .in ul {
   display: block;
 }
-.ch-top-menu li {
+.ch-top-menu .nav-item {
   display: table-cell;
   word-wrap: nowrap;
   text-align: left;
   padding: 0 100px 0 0;
   float: none;
-}
-.ch-top-menu li a:hover {
-  color: #ff4557;
 }
 .ch-top-menu .in li {
   display: block;
@@ -6779,6 +6779,9 @@ a:hover {
 .nav > li > a {
   padding: 0;
   display: inline;
+}
+.nav > li > a:hover {
+  color: #ff4557;
 }
 .nav > li > a:focus,
 .nav > li > a:hover {
@@ -6864,6 +6867,9 @@ a:hover {
   position: absolute;
   left: 0;
   top: 0;
+}
+.ch-tab-menu .ch-lang:hover {
+  color: #ff4557;
 }
 .ch-tab-menu .ch-print:after {
   content: url(../img/print.png);
@@ -7046,16 +7052,40 @@ footer a:hover {
   display: inline-block;
   margin-top: 60px;
   margin-bottom: 60px;
+  width: 650px;
+}
+@media (max-width: 768px) {
+  .ch-enter .ch-enter-caption {
+    width: 330px;
+  }
+}
+@media (max-width: 400px) {
+  .ch-enter .ch-enter-caption {
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .ch-enter .ch-enter-caption {
+    width: 280px;
+  }
 }
 .ch-enter .ch-enter-caption .ch-enter-text {
   font-size: 40px;
   font-family: "Open Sans";
   color: #335478;
   line-height: 1.444;
+  font-weight: 300;
+}
+@media (max-width: 400px) {
+  .ch-enter .ch-enter-caption .ch-enter-text {
+    font-size: 30px;
+  }
 }
 .ch-enter .ch-enter-caption .ch-enter-reg {
   font-size: 16px;
-  font-family: "Myriad Pro";
+  font-family: "Open Sans";
+  line-height: 60px;
+  font-weight: 600;
 }
 .ch-enter .ch-enter-caption .ch-enter-reg a {
   color: #29abe2;
@@ -7076,6 +7106,25 @@ footer a:hover {
   padding: 40px;
   box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.32);
 }
+@media (max-width: 768px) {
+  .ch-enter .ch-enter-form {
+    width: 450px;
+  }
+}
+@media (max-width: 450px) {
+  .ch-enter .ch-enter-form {
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .ch-enter .ch-enter-form {
+    width: 280px;
+  }
+}
+.ch-enter .ch-enter-form a {
+  line-height: 48px;
+  color: #c1cbd1;
+}
 .ch-enter .form-group {
   text-align: left;
   margin-bottom: 45px;
@@ -7085,26 +7134,19 @@ footer a:hover {
   font-size: 15px;
   color: #303f4d;
 }
-.ch-enter .ch-form-bottom {
-  display: block;
-  width: 100%;
-}
-.ch-enter .ch-form-bottom .ch-form-button {
-  display: block;
-  float: left;
-}
-.ch-enter .ch-form-bottom .ch-forgot-pass {
-  display: block;
-  float: right;
-}
 .ch-enter .ch-form-footer {
   display: table;
+}
+.ch-enter .ch-button-wrap {
+  padding-bottom: 70px;
 }
 .ch-input {
   border: none;
   border-bottom: 1px solid #c2d3dd;
   border-radius: 0;
   box-shadow: none;
+  font-family: "Open Sans";
+  font-weight: 600;
 }
 .ch-input:focus {
   box-shadow: none;
@@ -7117,6 +7159,48 @@ footer a:hover {
   padding: 15px 28px;
   font-family: "Open Sans";
   font-size: 18px;
+}
+.ch-btn-submit:hover {
+  background: #29abe1;
+  color: #ffffff;
+}
+.checkbox-label {
+  font-weight: 400;
+  font-style: italic;
+  color: #666666;
+}
+.checkbox-label i {
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  top: 6px;
+  font-style: normal;
+  color: #ccc;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + i:before {
+  font-family: 'FontAwesome';
+  font-size: 28px;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+}
+input[type="checkbox"]:checked + i {
+  position: relative;
+  -webkit-animation: icon-beat 0.1s ease;
+  animation: icon-beat 0.1s ease;
+}
+input[type="checkbox"] + i:before {
+  content: "\f096";
+}
+input[type="checkbox"]:checked + i:before {
+  content: "\f046";
+}
+input[type="checkbox"]:checked + i + span,
+input[type="checkbox"]:checked + i:before {
+  color: rgba(0, 128, 0, 0.5);
 }
 ch-hover {
   position: relative;
@@ -7133,7 +7217,7 @@ ch-hover {
 .ch-hover-content {
   display: table;
   background: #ff4557;
-  padding: 20px 15px 15px 15px;
+  padding: 15px 15px 20px 15px;
 }
 .ch-hover-content:before {
   border: 10px solid transparent;
@@ -7147,7 +7231,6 @@ ch-hover {
   font-size: 14px;
   font-family: "Open Sans";
   color: #ffffff;
-  line-height: 3.429;
   display: table-cell;
 }
 .ch-hover-content > li > a {
