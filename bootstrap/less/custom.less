@@ -149,7 +149,6 @@ a:hover{
 	
 	margin-top: 65px;
 	position: relative;
-    //box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.22);
     box-shadow: 0px 7px 10px -9px rgba(0, 0, 0, 0.5);
 	
 	.ch-lang{
@@ -166,18 +165,6 @@ a:hover{
             color: @ch-hover-color;
         }
 	}
-	/*&:before{
-		content: attr(data-lang);
-		position: absolute;
-		left: 0;
-		top: 0;
-		font-size: 14px;
-		font-family: "Open Sans";
-		color: rgb(152, 170, 179);
-		line-height: 1.857;
-		text-align: center;
-
-	}*/
 
 	.ch-print:after{
 		content: url(../img/print.png);
@@ -241,7 +228,7 @@ a:hover{
 	background: url(../img/things-bg.png) center no-repeat,
                 @ch-bg-color;
     background-position: left 50px bottom -300px;
-	padding: 45px;
+	padding: 7%;
     padding-bottom: 80px;
 
 	.row > div{
@@ -250,6 +237,7 @@ a:hover{
 	
 	.ch-card-wrap{
 		position: relative;
+        //width: 244px;
 		&:after{
 			content: url(../img/card-cut.png);
 			position: absolute;
@@ -257,6 +245,118 @@ a:hover{
     		left: 50%;
     		margin-left: 105px;
 		}
+        figure {
+            margin: 0;
+            padding: 0;
+            height: 366px;
+            position: relative;
+            display: block;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        figure:hover figcaption {
+	        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+            filter: alpha(opacity=100);
+            opacity: 1;
+            top: 0;
+        }
+
+        figcaption {       
+            -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+            filter: alpha(opacity=0);
+            opacity: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,.3);
+            color: #fff;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            transition: all .5s ease;
+            -webkit-transition-delay: .5s;
+            -moz-transition-delay: .5s;
+            -o-transition-delay: .5s;
+            -ms-transition-delay: .5s;
+            transition-delay: .5s;
+            width: 244px;
+            left: 50%;
+            margin-left: -122px;
+            
+            .card-info{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                
+                > div{
+                    margin-bottom: 25px;
+                }
+            }
+            .thumbs-up{
+                padding: 10px 20px 10px 70px;
+                
+                &:before{
+                    content: url('../img/thumbs-up.png');
+                    position: absolute;
+                    left: 45px;
+                }                
+            }
+            .bookmark{
+                padding: 10px 20px 10px 10px;
+                
+                &:before{
+                    content: url('../img/bookmark.png');
+                    position: absolute;
+                    left:15px;
+                }             
+            }
+        }
+
+//        figcaption h3 {
+//            font-family: 'Open sans';
+//            font-weight: 400;
+//            color: #f3b204;
+//            padding: 10px 20px;
+//            margin-bottom: 0;
+//            position: relative;
+//            righ: 100%;
+//            margin-top: 37px;
+//            font-size: 30px;
+//        }
+//
+//        figcaption p {
+//            font-family: 'Open sans';
+//            padding: 10px 20px;
+//            margin-bottom: 0;
+//            margin-top: 20px;
+//            position: relative;
+//            left: 100%;
+//            font-size: 13px;
+//        }
+//
+//        figure:hover h3,figure:hover p {
+//            left: 0;
+//        }
+
+        figcaption a {
+            color: #fff;
+            background: url(../img/small-printer.png) center no-repeat,
+                #8dc73f;
+            border-radius: 50%;
+            display: block;
+            width: 35px;
+            height: 35px;
+            padding: 4px 10px;
+            text-decoration: none;
+        }
+
+        figcaption a:hover {
+            color: #4f5856;
+            background: url(../img/small-printer.png) center no-repeat, @ch-hover-color;
+        }      
+        
 	}
 
 	img{		
@@ -266,8 +366,6 @@ a:hover{
         display: block;
         margin-left: auto;
         margin-right: auto;
-		//min-width: 100%;
-		//max-width: 100%;
 	}
 }
 
