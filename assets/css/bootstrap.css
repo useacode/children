@@ -6739,6 +6739,9 @@ a:hover {
   color: #337ab7;
   line-height: 1.688;
 }
+.ch-top-menu .navbar-nav {
+  width: 100%;
+}
 .ch-top-menu > ul {
   display: table;
   width: 100%;
