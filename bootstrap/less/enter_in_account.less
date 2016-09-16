@@ -18,6 +18,22 @@
             width: 280px;
         }
         
+        .wrap-caption{
+           text-align: left;
+            
+            @media (max-width: @screen-md){
+                text-align: center;
+            } 
+        }
+        
+        .wrap-link-reg{
+            text-align: right;
+            
+            @media (max-width: @screen-md){
+                text-align: center;
+            }
+        }
+        
         .ch-enter-text{
             font-size: 40px;
 	        font-family: "Open Sans";
@@ -58,7 +74,7 @@
         box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.32);
         
         @media (max-width: @screen-sm){
-            width: 450px;
+            width: 500px;
         }
         @media (max-width: 450px){
             width: 300px;
@@ -71,6 +87,22 @@
             line-height: 48px;
             color: #c1cbd1;
         }
+        
+        .wrap-button-create{
+            text-align: left;
+            
+            @media (max-width: @screen-sm){
+                text-align: center;
+            }
+        }
+        
+        .wrap-link-forgot{
+            text-align: right;
+            
+            @media (max-width: @screen-sm){
+                text-align: center;
+            }
+        }
     }
     
     .form-group{
@@ -81,12 +113,7 @@
             font-family: "Open Sans";
             font-size: 15px;
             color: #303f4d;
-        }
-        
-        input{
-            
-        }
-        
+        }     
     }
     
     .ch-form-footer{
