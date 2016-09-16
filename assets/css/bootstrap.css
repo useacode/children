@@ -7132,6 +7132,22 @@ footer a:hover {
     width: 280px;
   }
 }
+.ch-enter .ch-enter-caption .wrap-caption {
+  text-align: left;
+}
+@media (max-width: 992px) {
+  .ch-enter .ch-enter-caption .wrap-caption {
+    text-align: center;
+  }
+}
+.ch-enter .ch-enter-caption .wrap-link-reg {
+  text-align: right;
+}
+@media (max-width: 992px) {
+  .ch-enter .ch-enter-caption .wrap-link-reg {
+    text-align: center;
+  }
+}
 .ch-enter .ch-enter-caption .ch-enter-text {
   font-size: 40px;
   font-family: "Open Sans";
@@ -7171,7 +7187,7 @@ footer a:hover {
 }
 @media (max-width: 768px) {
   .ch-enter .ch-enter-form {
-    width: 450px;
+    width: 500px;
   }
 }
 @media (max-width: 450px) {
@@ -7187,6 +7203,22 @@ footer a:hover {
 .ch-enter .ch-enter-form a {
   line-height: 48px;
   color: #c1cbd1;
+}
+.ch-enter .ch-enter-form .wrap-button-create {
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .ch-enter .ch-enter-form .wrap-button-create {
+    text-align: center;
+  }
+}
+.ch-enter .ch-enter-form .wrap-link-forgot {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .ch-enter .ch-enter-form .wrap-link-forgot {
+    text-align: center;
+  }
 }
 .ch-enter .form-group {
   text-align: left;
