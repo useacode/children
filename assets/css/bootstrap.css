@@ -7190,6 +7190,11 @@ footer a:hover {
     width: 500px;
   }
 }
+@media (max-width: 600px) {
+  .ch-enter .ch-enter-form {
+    width: 400px;
+  }
+}
 @media (max-width: 450px) {
   .ch-enter .ch-enter-form {
     width: 300px;
