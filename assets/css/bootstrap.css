@@ -6804,11 +6804,6 @@ a:hover {
   max-width: 100%;
   max-height: 100%;
 }
-.ch-display-table {
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-}
 @media (max-width: 1024px) {
   .ch-main-logo-img {
     max-width: 75%;
@@ -6819,7 +6814,7 @@ a:hover {
   .ch-main-logo-img {
     position: absolute;
     top: 34px;
-    left: 20px;
+    left: -25px;
     right: 0;
     margin-left: auto;
     margin-right: auto;
@@ -6827,6 +6822,16 @@ a:hover {
     max-width: 65%;
     max-height: 65%;
   }
+}
+@media (max-width: 500px) {
+  .ch-main-logo-img {
+    left: 25px;
+  }
+}
+.ch-display-table {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
 }
 .ch-main-logo {
   background: url(../img/top-bg.png) center top no-repeat;
@@ -6920,12 +6925,13 @@ a:hover {
 .ch-items .ch-card-wrap {
   position: relative;
   width: 244px;
+  float: right;
+  right: 50%;
 }
 .ch-items .ch-card-wrap:after {
   content: url(../img/card-cut.png);
   position: absolute;
   bottom: -5px;
-  left: 50%;
   margin-left: 105px;
 }
 .ch-items .ch-card-wrap figure {
@@ -6936,6 +6942,9 @@ a:hover {
   display: block;
   cursor: pointer;
   overflow: hidden;
+  float: left;
+  left: 50%;
+  box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.22);
 }
 .ch-items .ch-card-wrap figure:hover figcaption {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -7000,7 +7009,6 @@ a:hover {
   background: url(../img/small-printer.png) center no-repeat, #ff4557;
 }
 .ch-items img {
-  box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.22);
   width: 244px;
   height: 366px;
   display: block;
