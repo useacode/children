@@ -6733,6 +6733,12 @@ body {
 a:hover {
   text-decoration: none;
 }
+h2 {
+  color: #335478;
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 .ch-top-menu {
   font-size: 16px;
   font-family: "Myriad Pro";
@@ -6850,7 +6856,8 @@ a:hover {
   color: #ff4557;
 }
 .ch-tab-menu {
-  margin-top: 65px;
+  margin-top: 35px;
+  padding-top: 30px;
   position: relative;
   box-shadow: 0px 7px 10px -9px rgba(0, 0, 0, 0.5);
 }
@@ -6862,7 +6869,7 @@ a:hover {
   text-align: center;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 30px;
 }
 .ch-tab-menu .ch-lang:hover {
   color: #ff4557;
@@ -6871,7 +6878,7 @@ a:hover {
   content: url(../img/print.png);
   position: absolute;
   right: 0;
-  top: 0;
+  top: 30px;
 }
 .ch-tab-menu .ch-print:hover:after {
   content: url(../img/print-hover.png);
@@ -6912,6 +6919,15 @@ a:hover {
   .ch-tab-menu > ul > li {
     margin-right: 30px;
   }
+}
+.fixed {
+  position: fixed;
+  top: -36px;
+  width: 1230px;
+  left: 50%;
+  margin-left: -615px;
+  background: white;
+  z-index: 99;
 }
 .ch-items {
   background: url(../img/things-bg.png) center no-repeat, #e8f0f5;
@@ -7036,12 +7052,6 @@ a:hover {
   margin-top: 50px;
   background: url(../img/things-bg.png) center no-repeat, #ffffff;
   background-position: left 50% top -99px;
-}
-.ch-bottom h2 {
-  color: #335478;
-  font-size: 36px;
-  font-weight: 300;
-  text-transform: uppercase;
 }
 .ch-bottom p {
   font-size: 16px;
@@ -7353,5 +7363,32 @@ ch-hover {
 }
 .ch-hover:hover .ch-hover-menu {
   display: table;
+}
+.ch-user-about {
+  background: url(../img/user-about-bg.png) center no-repeat;
+  background-position: left 10px bottom 30px;
+}
+.ch-user-about .ch-why-block {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+.ch-user-about .ch-todo {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ch-user-about .ch-todo > ul li {
+  margin-bottom: 35px;
+  font-size: 21px;
+  font-family: "Myriad Pro";
+  color: #666666;
+}
+.ch-user-about .ch-todo > ul li:before {
+  content: url(../img/list-point.png);
+  padding-right: 20px;
+  position: relative;
+  top: -4px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
