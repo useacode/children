@@ -6746,9 +6746,6 @@ h2 {
   line-height: 1.688;
 }
 .ch-top-menu .navbar-nav {
-  width: 100%;
-}
-.ch-top-menu > ul {
   display: table;
   width: 100%;
   overflow: hidden;
@@ -6771,13 +6768,13 @@ h2 {
   padding: 0 100px 0 0;
   float: none;
 }
-.ch-top-menu .in li {
-  display: block;
-}
 @media (max-width: 768px) {
-  .ch-top-menu li {
+  .ch-top-menu .nav-item {
     display: block;
   }
+}
+.ch-top-menu .in li {
+  display: block;
 }
 .ch-top-menu li:nth-child(2) {
   width: 100%;
@@ -6923,11 +6920,17 @@ h2 {
 .fixed {
   position: fixed;
   top: -36px;
-  width: 1230px;
-  left: 50%;
-  margin-left: -615px;
   background: white;
   z-index: 99;
+}
+.tab-menu-wrap {
+  padding-left: 0 !important;
+  padding-right: 30px !important;
+}
+@media (max-width: 768px) {
+  .tab-menu-wrap {
+    width: 100%;
+  }
 }
 .ch-items {
   background: url(../img/things-bg.png) center no-repeat, #e8f0f5;
