@@ -104,15 +104,25 @@
         </footer>
     </div>
     <script>
-        $(window).bind('scroll', function() {
-           if ($(window).scrollTop() > 620) {
-              $('.ch-tab-menu').addClass('fixed');
-           }
-           else
-           {
-              $('.ch-tab-menu').removeClass('fixed');
-           }
+        (function($){
+            $.fn.fixedScroll = function(calc){
+                var $this = this;
+                $(window).bind('scroll', function() {
+                   if ($(window).scrollTop() > calc() ) {
+                      $this.addClass('fixed');
+                   }
+                   else
+                   {
+                      $this.removeClass('fixed');
+                   }
+                });
+            }
+        })(jQuery);
+
+        $('.ch-tab-menu').fixedScroll(function(){
+            return $(".ch-why-block").offset().top - $(".ch-tab-menu").height() - parseInt($(".ch-tab-menu").css("paddingTop"), 10);
         });
+        
     </script>
 </body>
 </html>

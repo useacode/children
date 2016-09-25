@@ -50,7 +50,8 @@
             </p>
         </header>
         <section>
-            <nav class="ch-tab-menu">
+          <div class="tab-menu-wrap container">
+               <nav class="ch-tab-menu">
                 <span class="ch-lang ch-hover">Rus
                     <div class="ch-hover-menu">
                         <ul class="ch-hover-content list-unstyled">
@@ -74,6 +75,7 @@
                 </ul>
                 <a href="#" class="ch-print"></a>
             </nav>
+          </div>       
         </section>
         <main>
             <section class="ch-items text-center">
@@ -261,11 +263,11 @@
     <script>
         $(window).bind('scroll', function() {
            if ($(window).scrollTop() > 620) {
-              $('.ch-tab-menu').addClass('fixed');
+              $('.tab-menu-wrap').addClass('fixed');
            }
            else
            {
-              $('.ch-tab-menu').removeClass('fixed');
+              $('.tab-menu-wrap').removeClass('fixed');
            }
         });
     </script>
