@@ -6753,11 +6753,6 @@ h2 {
 .ch-top-menu span:hover {
   color: #ff4557;
 }
-@media (max-width: 768px) {
-  .ch-top-menu ul {
-    display: block;
-  }
-}
 .ch-top-menu .in ul {
   display: block;
 }
@@ -6924,22 +6919,18 @@ h2 {
   z-index: 99;
 }
 .tab-menu-wrap {
-  padding-left: 0 !important;
-  padding-right: 30px !important;
-}
-@media (max-width: 768px) {
-  .tab-menu-wrap {
-    width: 100%;
-  }
+  width: 100%;
 }
 .ch-items {
   background: url(../img/things-bg.png) center no-repeat, #e8f0f5;
   background-position: left 50px bottom -300px;
-  padding: 7%;
   padding-bottom: 80px;
 }
 .ch-items .row > div {
   margin-bottom: 45px;
+}
+.ch-items .ch-items-wrap {
+  padding: 4%;
 }
 .ch-items .ch-card-wrap {
   position: relative;
