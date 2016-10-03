@@ -41,11 +41,7 @@ h2{
             color: @ch-hover-color;
         }
     }
-	@media (max-width: @screen-sm){
-		ul{
-			display: block;
-		}
-	}
+
 	.in{
 		ul{
 			display: block;
@@ -57,7 +53,7 @@ h2{
 		text-align: left;
         padding: 0 100px 0 0;
         float: none;
-        @media (max-width: @screen-sm){
+        @media (max-width: 767px){
             display: block;       
         }
 	}
@@ -240,35 +236,37 @@ h2{
     z-index: 99;  
 }
 .tab-menu-wrap{  
-    padding-left: 0 !important;
-    padding-right: 30px !important; 
-    @media (max-width: @screen-sm){
-        width: 100%;
-    }
+    width: 100%;
 }
 
 .ch-items{
 	background: url(../img/things-bg.png) center no-repeat,
                 @ch-bg-color;
     background-position: left 50px bottom -300px;
-	padding: 7%;
     padding-bottom: 80px;
 
 	.row > div{
 		margin-bottom: 45px;
 	}
 	
+    .ch-items-wrap{
+        padding: 4%;
+    }
 	.ch-card-wrap{
 		position: relative;
         width: 244px;
-        float: right;
-        right: 50%;
 		&:after{
 			content: url(../img/card-cut.png);
 			position: absolute;
 			bottom: -5px;
     		margin-left: 105px;
 		}
+
+        @media (max-width: @screen-sm){
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         figure {
             margin: 0;
             padding: 0;
@@ -277,8 +275,6 @@ h2{
             display: block;
             cursor: pointer;
             overflow: hidden;
-            float: left;
-            left: 50%;
             box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.22);
         }
         figure:hover figcaption {
