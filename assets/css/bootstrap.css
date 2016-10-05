@@ -6831,6 +6831,9 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
+.ch-display-table .ch-logo-url {
+  margin-top: -95px;
+}
 .ch-main-logo {
   background: url(../img/top-bg.png) center top no-repeat;
   padding-top: 418px;
@@ -7360,6 +7363,15 @@ ch-hover {
 .ch-hover:hover .ch-hover-menu {
   display: table;
 }
+.tab-content {
+  margin-top: 25px;
+}
+.ch-about-wrap {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #dedddd;
+}
 .ch-user-about {
   background: url(../img/user-about-bg.png) center no-repeat;
   background-position: left 10px bottom 30px;
@@ -7369,6 +7381,12 @@ ch-hover {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.ch-user-about .ch-why-block .about-bold {
+  color: #1a1a36;
+  font-weight: 700;
 }
 .ch-user-about .ch-todo {
   display: table;
