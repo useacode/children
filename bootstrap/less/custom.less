@@ -94,32 +94,42 @@ h2{
 	float: left;
 }
 
-.ch-main-logo-img{
-	margin-top: -95px;
-    max-width: 100%;
-    max-height: 100%;
-    
-    @media (max-width: 1024px){
-        max-width: 75%;
-        max-height: 75%;
-    }
-    
+.ch-main-logo-link{
+    margin-top: -50px;
+    display: block;
+    position: relative;
+    z-index: 10;
+
     @media (max-width: @screen-sm){
-	    position: absolute;
-	    top: 34px;
-	    left: -25px;
-	    right: 0;
-	    margin-left: auto;
-	    margin-right: auto;
-	    margin-top: 0;
-        max-width: 65%;
-        max-height: 65%;
+        position: absolute;
+        top: 34px;
+        left: -25px;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
     }
-    
+
     @media (max-width: 500px){
-	    left: 25px;
+        left: 25px;
     }
 }
+
+.ch-main-logo-img{
+	
+    max-width: 100vw;
+
+    @media (max-width: 1024px){
+        max-width: 25vw;
+    }
+
+    @media (max-width: @screen-sm){
+        max-width: 55vw;
+    }
+    
+    
+}
+
 .ch-display-table{
     display: table;
     margin-left: auto;
