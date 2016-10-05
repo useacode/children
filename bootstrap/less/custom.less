@@ -33,7 +33,7 @@ h2{
         width: 100%;
 		display: table;
 		width: 100%;
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
     
     span{
@@ -42,11 +42,6 @@ h2{
         }
     }
 
-	.in{
-		ul{
-			display: block;
-		}
-	}
 	.nav-item{
 		display: table-cell;
 		word-wrap: nowrap;
@@ -58,9 +53,14 @@ h2{
         }
 	}
 	.in{
-		li{
-			display: block;
-		}
+        @media (max-width: @screen-sm){
+    		li{
+    			display: block;
+    		}
+            ul{
+                display: block;
+            }
+        }
 	}
 	li:nth-child(2){
 		width: 100%;
@@ -92,6 +92,7 @@ h2{
 	border: 1px solid #453682;
 	border-radius: 3px;
 	float: left;
+    z-index: 20;
 }
 
 .ch-main-logo-link{

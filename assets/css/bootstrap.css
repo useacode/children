@@ -6748,13 +6748,10 @@ h2 {
 .ch-top-menu .navbar-nav {
   display: table;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .ch-top-menu span:hover {
   color: #ff4557;
-}
-.ch-top-menu .in ul {
-  display: block;
 }
 .ch-top-menu .nav-item {
   display: table-cell;
@@ -6768,8 +6765,13 @@ h2 {
     display: block;
   }
 }
-.ch-top-menu .in li {
-  display: block;
+@media (max-width: 768px) {
+  .ch-top-menu .in li {
+    display: block;
+  }
+  .ch-top-menu .in ul {
+    display: block;
+  }
 }
 .ch-top-menu li:nth-child(2) {
   width: 100%;
@@ -6796,6 +6798,7 @@ h2 {
   border: 1px solid #453682;
   border-radius: 3px;
   float: left;
+  z-index: 20;
 }
 .ch-main-logo-link {
   margin-top: -50px;
