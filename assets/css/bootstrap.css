@@ -7383,7 +7383,22 @@ ch-hover {
 }
 .ch-user-about {
   background: url(../img/user-about-bg.png) center no-repeat;
-  background-position: left 10px bottom 30px;
+  background-position: left 50%;
+}
+@media (max-width: 1260px) {
+  .ch-user-about {
+    background-size: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .ch-user-about {
+    background-size: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .ch-user-about {
+    background-size: 0%;
+  }
 }
 .ch-user-about .ch-why-block {
   display: table;
@@ -7413,5 +7428,21 @@ ch-hover {
   padding-right: 20px;
   position: relative;
   top: -4px;
+}
+@media (max-width: 992px) {
+  .ch-user-about .ch-todo h3 {
+    font-size: 24px;
+  }
+  .ch-user-about .ch-todo > ul > li {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .ch-user-about .ch-todo h3 {
+    font-size: 20px;
+  }
+  .ch-user-about .ch-todo > ul > li {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */
