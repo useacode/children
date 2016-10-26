@@ -6727,6 +6727,46 @@ button.close {
   font-style: normal;
   font-weight: normal;
 }
+/* font-family: "OpenSansRegular"; */
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "OpenSansLight"; */
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../fonts/OpenSans/OpenSansLight/OpenSansLight.eot");
+  src: url("../fonts/OpenSans/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSans/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "OpenSansBold"; */
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/OpenSans/OpenSansBold/OpenSansBold.eot");
+  src: url("../fonts/OpenSans/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSansBold/OpenSansBold.woff") format("woff"), url("../fonts/OpenSans/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "OpenSansExtraBold"; */
+@font-face {
+  font-family: "OpenSansExtraBold";
+  src: url("../fonts/OpenSans/OpenSansExtraBold/OpenSansExtraBold.eot");
+  src: url("../fonts/OpenSans/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"), url("../fonts/OpenSans/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "OpenSansSemiBold"; */
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot");
+  src: url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"), url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 body {
   padding-top: 40px;
 }
@@ -6806,7 +6846,7 @@ h2 {
   position: relative;
   z-index: 10;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .ch-main-logo-link {
     position: absolute;
     top: 34px;
@@ -7069,6 +7109,11 @@ h2 {
   padding: 60px 50px;
   border-bottom: 1px solid #dedddd;
 }
+@media (max-width: 768px) {
+  .ch-bottom img {
+    padding: 30px 30px;
+  }
+}
 .ch-bottom .ch-recommend {
   letter-spacing: 1px;
   font-weight: 100;
@@ -7077,17 +7122,13 @@ h2 {
   font-weight: 600;
   margin-bottom: 40px;
 }
-.ch-bottom .ch-social {
-  margin-bottom: 90px;
-}
-.ch-bottom .ch-social img {
-  padding: 0 15px;
-  border: none;
+.ch-bottom .social-wrap {
+  display: table;
+  margin: 40px auto;
 }
 @media (max-width: 724px) {
   .ch-printer {
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 100%;
   }
 }
 footer {
@@ -7133,6 +7174,53 @@ footer a:hover {
     text-align: center;
     padding-right: 0;
   }
+}
+.social-wrap {
+  overflow: hidden;
+  margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .social-wrap {
+    margin: 20px 0;
+  }
+}
+.social {
+  float: left;
+  display: table;
+  width: 115px;
+  border: 1px solid rgba(128, 128, 128, 0.38);
+  border-radius: 4px;
+  margin-right: 43px;
+}
+@media (max-width: 768px) {
+  .social {
+    float: none;
+    margin: 10px auto;
+  }
+}
+.social .social-img {
+  display: table-cell;
+  width: 45px;
+  height: 45px;
+  border-right: 1px solid rgba(128, 128, 128, 0.38);
+}
+.social .facebook {
+  background: url(../img/facebook.png) center no-repeat;
+}
+.social .vkontakte {
+  background: url(../img/vkontakte.png) center no-repeat;
+}
+.social .twitter {
+  background: url(../img/twitter.png) center no-repeat;
+}
+.social .counter {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 5px 14px;
+  font-size: 19px;
+  font-family: "OpenSansRegular";
+  color: #777777;
 }
 .ch-enter {
   background: #e8f0f5;
@@ -7372,18 +7460,65 @@ ch-hover {
 .ch-hover:hover .ch-hover-menu {
   display: table;
 }
+main {
+  letter-spacing: 1px;
+}
+.about-light {
+  font-size: 16px;
+  color: #1a1a36;
+  font-family: "OpenSansLight";
+}
+@media (max-width: 768px) {
+  .about-light {
+    text-align: center;
+  }
+}
+.about-bold {
+  font-size: 16px;
+  color: #1a1a36;
+  font-family: "OpenSansSemiBold";
+}
+@media (max-width: 768px) {
+  .about-bold {
+    text-align: center;
+    font-size: 15px;
+  }
+}
 .tab-content {
   margin-top: 25px;
 }
 .ch-about-wrap {
   display: table;
+  min-width: 650px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #dedddd;
 }
+@media (max-width: 320px) {
+  .ch-about-wrap {
+    min-width: 290px;
+  }
+}
+.ch-about-wrap h2 {
+  margin-top: 38px;
+}
+@media (max-width: 320px) {
+  .ch-about-wrap h2 {
+    font-size: 27px;
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+.ch-about-wrap .ch-social {
+  margin: 40px 0;
+}
+.ch-about-wrap .ch-social img {
+  margin-right: 38px;
+  border: none;
+}
 .ch-user-about {
   background: url(../img/user-about-bg.png) center no-repeat;
-  background-position: left 50%;
+  background-position: left 34%;
 }
 @media (max-width: 1260px) {
   .ch-user-about {
@@ -7404,23 +7539,31 @@ ch-hover {
   display: table;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   font-size: 16px;
-  letter-spacing: 1px;
-}
-.ch-user-about .ch-why-block .about-bold {
   color: #1a1a36;
-  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .ch-user-about .ch-why-block {
+    margin-bottom: 20px;
+  }
 }
 .ch-user-about .ch-todo {
   display: table;
   margin-left: auto;
   margin-right: auto;
 }
+.ch-user-about .ch-todo > h3 {
+  color: #335478;
+}
+.ch-user-about .ch-todo > ul {
+  margin-top: 18px;
+}
 .ch-user-about .ch-todo > ul li {
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   font-size: 21px;
   font-family: "Myriad Pro";
+  letter-spacing: 1px;
   color: #666666;
 }
 .ch-user-about .ch-todo > ul li:before {
@@ -7440,9 +7583,89 @@ ch-hover {
 @media (max-width: 768px) {
   .ch-user-about .ch-todo h3 {
     font-size: 20px;
+    text-align: center;
   }
   .ch-user-about .ch-todo > ul > li {
     font-size: 15px;
   }
+}
+.about-printer {
+  margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .about-printer {
+    width: 90%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.about-note {
+  color: #bbbbbb;
+  font-family: "OpenSansSemiBold";
+  font-size: 14px;
+  margin-bottom: 55px;
+}
+.about-form {
+  overflow: hidden;
+  margin-bottom: 100px;
+  border: none;
+}
+@media (max-width: 320px) {
+  .about-form {
+    margin-bottom: 30px;
+  }
+}
+.about-form .form-textarea {
+  width: 100%;
+  height: 110px;
+  resize: none;
+  border-color: #a3a3a3;
+  border-radius: 2px;
+  margin-top: 30px;
+  padding: 5px 10px;
+}
+.about-form .form-text {
+  border: 1px solid #a3a3a3;
+  border-radius: 2px;
+  margin: 15px 10px 15px 0;
+  padding: 8px 0 8px 10px;
+  font-family: "OpenSansLight";
+}
+.about-form .fname {
+  width: 25%;
+}
+@media (max-width: 320px) {
+  .about-form .fname {
+    width: 100%;
+  }
+}
+.about-form .femail {
+  width: 40%;
+}
+@media (max-width: 320px) {
+  .about-form .femail {
+    width: 100%;
+  }
+}
+.about-form .btn-wrap {
+  float: right;
+}
+@media (max-width: 768px) {
+  .about-form .btn-wrap {
+    float: none;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.about-form .form-button {
+  background-color: #ff4556;
+  border-radius: 2px;
+  color: white;
+  padding: 8px 25px;
+  margin: 15px 0;
+  border: none;
+  outline: none;
 }
 /*# sourceMappingURL=bootstrap.css.map */

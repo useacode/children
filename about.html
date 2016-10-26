@@ -22,7 +22,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="collapse">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item"><a href="#">О&nbsp;проекте</a></li>
+                        <li class="nav-item"><a href="./about.html">О&nbsp;проекте</a></li>
                         <li class="nav-item">
                             <span class="ch-hover">Rus
                                 <div class="ch-hover-menu">
@@ -38,12 +38,12 @@
                             </span>
                         </li>
                         <li class="nav-item"><a href="#">Нарисовать</a></li>
-                        <li class="nav-item"><a href="enter_in_account.html">Войти</a></li>
+                        <li class="nav-item"><a href="./enter_in_account.html">Войти</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="ch-display-table">
-                <img class="ch-main-logo-img" src="assets/img/main-logo.png"/>
+                <a href="./index.html" class="ch-main-logo-link"><img class="ch-main-logo-img" src="assets/img/main-logo.png"/></a>
             </div>
             <p class="ch-main-logo">
                 С буковками можно занять детей с пользой. <br/> а можно и <span class="highlight"><a href="#">нарисовать</a></span> для них что-ниудь интересное
@@ -71,7 +71,7 @@
                                   <div class="text-left ch-why-block">
                                        <h2>ЗАЧЕМ МЫ ВСЕ ЭТО?</h2>
                                        <p class="about-bold">Просто однажды приходит осознание того, что всем нам просто<br/> необходимы новые буковки на каждый день</p>
-                                       <p>У нас вы всегда найдете новые карточки, что бы развитие<br/>  
+                                       <p class="about-light">У нас вы всегда найдете новые карточки, чтобы развитие<br/>  
                                             ребенка проходило весело и разнообразно.<br/> 
                                             Пожалуй, еще пару предложений какого-то текста.<br/> 
                                        </p>
@@ -89,33 +89,52 @@
                             <div class="ch-about-wrap">
                                   <div class="text-left">
                                        <h2>А ЕЩЕ НАШИ КАРТОЧКИ МОЖНО<br> НАПЕЧАТАТЬ</h2>
-                                       <p class="about-bold">Мы хотим сделать интернет добрее, поэтому просто даем вам возможность<br/> напечатать наши карточки. Бесплатно. Без смс.</p>
-                                       <p>
+                                       <p class="about-bold">Мы хотим сделать интернет добрее, поэтому просто даем вам<br/> возможность напечатать наши карточки. Бесплатно. Без смс.</p>
+                                       <p class="about-light">
                                            Некоторые наши карточки можно свободно печатать<br>
                                            т.е. совершенно безвозмездно вы можете скачать и печатать<br>
                                            карточки для своих детей.  
                                        </p>
-                                       <p>
-                                           Это значит, что мы даем права на некомерческое использование наших<br>
-                                           работ, всем желающим. Ищите такие значки, они означают что карточку<br>
-                                           можно напечатать
+                                       <p class="about-light">
+                                           Это значит, что мы даем права на некомерческое использование<br> 
+                                           наших работ, всем желающим. Ищите такие значки, они означают<br> 
+                                           что карточку можно напечатать
                                        </p>
+                                       <img class="about-printer" src="assets/img/printer.png" alt=""/>
+                                       <p class="about-note">НЕ ЗАБЫВАЙТЕ, ЧТО ВСЕ ИЗОБРАЖЕНИЯ ПРИНАДЛЕЖАТ АВТОРАМ
+                                            И ВЫ МОЖЕТЕ ИХ ИСПОЛЬЗОВАТЬ ТОЛЬКО В ЛИЧНЫХ ЦЕЛЯХ</p>
                                   </div> 
                             </div>        
                        </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="author">author</div>
                 </div>
-                <section class="ch-bottom text-center">
-                    <img class="ch-printer" src="assets/img/printer.png" alt=""/>
+                <div class="ch-about-wrap text-left">
                     <h2 class="ch-recommend">посоветуйте нас друзьям</h2>
-                    <p class="ch-help">Нам нужна ваша помощь</p>
-                    <div class="ch-social">
-                        <img src="assets/img/fb.png" alt="">
-                        <img src="assets/img/vk.png" alt="">
-                        <img src="assets/img/tw.png" alt="">
+                    <p class="about-bold">Нам нужна ваша помощь</p>
+                    <div class="social-wrap">
+                        <div class="social">
+                          <div class="social-img facebook"></div>
+                           <span class="counter">6</span>
+                        </div>
+                        <div class="social">
+                            <div class="social-img vkontakte"></div>
+                           <span class="counter">234</span>
+                        </div>
+                        <div class="social">
+                            <div class="social-img twitter"></div>
+                           <span class="counter">0</span>
+                        </div>
                     </div>
-                </section>
+                </div>
+                <div class="about-form ch-about-wrap">
+                    <h2>Задайте вопрос</h2>
+                    <p class="about-bold">Напишите нам через форму обратной связи</p>
+                    <textarea name="comment" id="" class="form-textarea" maxlength="1000"></textarea>
+                    <input class="form-text fname" id="name" type="text" name="name" placeholder="Ваше имя" />
+                    <input class="form-text femail" id="mail" type="text" name="email" placeholder="Ваша @ почта" />
+                    <div class="btn-wrap"><input class="btn form-button" type="button" name="send" value="Отправить" /></div>
+                </div>
             </div>
         </main>
         <footer>
@@ -149,7 +168,7 @@
 //            return $(".ch-why-block").offset().top - $(".ch-tab-menu").height() - parseInt($(".ch-tab-menu").css("paddingTop"), 10);
 //        });
         $(window).bind('scroll', function() {
-           if ($(window).scrollTop() > 620) {
+           if ($(window).scrollTop() > 625) {
               $('.tab-menu-wrap').addClass('fixed');
            }
            else
