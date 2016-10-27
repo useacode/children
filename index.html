@@ -279,21 +279,39 @@
                         <li><a href="#"><img src="assets/img/footer-logo.png" alt=""></a></li>
                         <li>&copy;&nbsp;2015&nbsp;—&nbsp;2016</li>
                         <li><a href="#">Стать&nbsp;автором</a></li>
-                        <li><a href="#">О&nbsp;проекте</a></li>
-                        <li><a href="#">Зарегистрироваться</a></li>
+                        <li><a href="./about.html">О&nbsp;проекте</a></li>
+                        <li><a href="./enter_registeren_account.html">Зарегистрироваться</a></li>
                 </ul>
             </div>
         </footer>
     <script>
-        $(window).bind('scroll', function() {
-           if ($(window).scrollTop() > 620) {
-              $('.tab-menu-wrap').addClass('fixed');
-           }
-           else
-           {
-              $('.tab-menu-wrap').removeClass('fixed');
-           }
+        (function($){
+            $.fn.fixedScroll = function(calc){
+                var $this = this;
+                $(window).bind('scroll', function() {
+                   if ($(window).scrollTop() > calc() ) {
+                      $this.addClass('fixed');
+                   }
+                   else
+                   {
+                      $this.removeClass('fixed');
+                   }
+                });
+            }
+        })(jQuery);
+
+        $('.tab-menu-wrap').fixedScroll(function(){
+            return $(".ch-items").offset().top - $(".ch-tab-menu").height() - parseInt($(".ch-tab-menu").css("paddingTop"), 10);
         });
+//        $(window).bind('scroll', function() {
+//           if ($(window).scrollTop() > 620) {
+//              $('.tab-menu-wrap').addClass('fixed');
+//           }
+//           else
+//           {
+//              $('.tab-menu-wrap').removeClass('fixed');
+//           }
+//        });
     </script>
 </body>
 </html>

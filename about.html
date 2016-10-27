@@ -70,10 +70,10 @@
                          <div class="ch-about-wrap">
                                   <div class="text-left ch-why-block">
                                        <h2>ЗАЧЕМ МЫ ВСЕ ЭТО?</h2>
-                                       <p class="about-bold">Просто однажды приходит осознание того, что всем нам просто<br/> необходимы новые буковки на каждый день</p>
-                                       <p class="about-light">У нас вы всегда найдете новые карточки, чтобы развитие<br/>  
+                                       <p class="about-bold">Просто однажды приходит осознание того, что всем нам просто необходимы новые буковки на каждый день</p>
+                                       <p class="about-light">У нас вы всегда найдете новые карточки, чтобы развитие 
                                             ребенка проходило весело и разнообразно.<br/> 
-                                            Пожалуй, еще пару предложений какого-то текста.<br/> 
+                                            Пожалуй, еще пару предложений какого-то текста.
                                        </p>
                                   </div> 
                                   <div class="text-left ch-todo">
@@ -88,16 +88,16 @@
                             </div> 
                             <div class="ch-about-wrap">
                                   <div class="text-left">
-                                       <h2>А ЕЩЕ НАШИ КАРТОЧКИ МОЖНО<br> НАПЕЧАТАТЬ</h2>
-                                       <p class="about-bold">Мы хотим сделать интернет добрее, поэтому просто даем вам<br/> возможность напечатать наши карточки. Бесплатно. Без смс.</p>
+                                       <h2>А ЕЩЕ НАШИ КАРТОЧКИ МОЖНО НАПЕЧАТАТЬ</h2>
+                                       <p class="about-bold">Мы хотим сделать интернет добрее, поэтому просто даем вам возможность напечатать наши карточки. Бесплатно. Без смс.</p>
                                        <p class="about-light">
-                                           Некоторые наши карточки можно свободно печатать<br>
-                                           т.е. совершенно безвозмездно вы можете скачать и печатать<br>
+                                           Некоторые наши карточки можно свободно печатать
+                                           т.е. совершенно безвозмездно вы можете скачать и печатать
                                            карточки для своих детей.  
                                        </p>
                                        <p class="about-light">
-                                           Это значит, что мы даем права на некомерческое использование<br> 
-                                           наших работ, всем желающим. Ищите такие значки, они означают<br> 
+                                           Это значит, что мы даем права на некомерческое использование
+                                           наших работ, всем желающим. Ищите такие значки, они означают 
                                            что карточку можно напечатать
                                        </p>
                                        <img class="about-printer" src="assets/img/printer.png" alt=""/>
@@ -140,42 +140,42 @@
         <footer>
            <div class="container">
                 <ul class="list-unstyled ch-footer-menu">
-                        <li><a href="#"><img src="assets/img/footer-logo.png" alt=""></a></li>
+                        <li><a href="./index.html"><img src="assets/img/footer-logo.png" alt=""></a></li>
                         <li>&copy;&nbsp;2015&nbsp;—&nbsp;2016</li>
                         <li><a href="#">Стать&nbsp;автором</a></li>
                         <li><a href="#">О&nbsp;проекте</a></li>
-                        <li><a href="#">Зарегистрироваться</a></li>
+                        <li><a href="./enter_registeren_account.html">Зарегистрироваться</a></li>
                 </ul>
             </div>
         </footer>
     <script>
-//        (function($){
-//            $.fn.fixedScroll = function(calc){
-//                var $this = this;
-//                $(window).bind('scroll', function() {
-//                   if ($(window).scrollTop() > calc() ) {
-//                      $this.addClass('fixed');
-//                   }
-//                   else
-//                   {
-//                      $this.removeClass('fixed');
-//                   }
-//                });
-//            }
-//        })(jQuery);
-//
-//        $('.tab-menu-wrap').fixedScroll(function(){
-//            return $(".ch-why-block").offset().top - $(".ch-tab-menu").height() - parseInt($(".ch-tab-menu").css("paddingTop"), 10);
-//        });
-        $(window).bind('scroll', function() {
-           if ($(window).scrollTop() > 625) {
-              $('.tab-menu-wrap').addClass('fixed');
-           }
-           else
-           {
-              $('.tab-menu-wrap').removeClass('fixed');
-           }
+        (function($){
+            $.fn.fixedScroll = function(calc){
+                var $this = this;
+                $(window).bind('scroll', function() {
+                   if ($(window).scrollTop() > calc() ) {
+                      $this.addClass('fixed');
+                   }
+                   else
+                   {
+                      $this.removeClass('fixed');
+                   }
+                });
+            }
+        })(jQuery);
+
+        $('.tab-menu-wrap').fixedScroll(function(){
+            return $(".ch-why-block").offset().top - $(".ch-tab-menu").height() - parseInt($(".ch-tab-menu").css("paddingTop"), 10);
         });
+//        $(window).bind('scroll', function() {
+//           if ($(window).scrollTop() > 625) {
+//              $('.tab-menu-wrap').addClass('fixed');
+//           }
+//           else
+//           {
+//              $('.tab-menu-wrap').removeClass('fixed');
+//           }
+//        });
     </script>
 </body>
 </html>

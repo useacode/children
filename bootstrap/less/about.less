@@ -1,24 +1,24 @@
 
-main{
-    letter-spacing: 1px;
-}
+//main{
+//    letter-spacing: 1px;
+//}
 
 .about-light{
     font-size: 16px;
     color: #1a1a36;
     font-family: "OpenSansLight";
     
-    @media(max-width: @screen-sm){
-        text-align: center;
-    }
+//    @media(max-width: 576px){
+//        text-align: center;
+//    }
 }
 
 .about-bold{
     font-size: 16px;
     color: #1a1a36;
     font-family: "OpenSansSemiBold";
-    @media(max-width: @screen-sm){
-        text-align: center;
+    @media(max-width: 576px){
+//        text-align: center;
         font-size: 15px;
     }
 }
@@ -29,22 +29,37 @@ main{
 
 .ch-about-wrap{
     display: table;
-    min-width: 650px;
+    width: 290px;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #dedddd;
     
-    @media(max-width: 320px){
-        min-width: 290px;
+    @media screen and (min-width: 375px){
+        width: 345px;
     }
-    
+    @media screen and (min-width: 533px){
+        width: 500px;
+    }
+    @media screen and (min-width: 736px){
+        width: 566px;
+    }
+    @media screen and (min-width: 992px){
+        width: 588px;
+    }
+//    @media screen and (max-width: 375px){
+//        min-width: 345px;
+//    }
+//    @media screen and (max-width: 414px){
+//        min-width: 384px;
+//    }
+   
     h2{
         margin-top: 38px;
         
-        @media(max-width: 320px){
-            font-size: 27px;
+        @media(max-width: 576px){
+            font-size: 21px;
             margin-top: 15px;
-            text-align: center;
+//            text-align: center;
         }
     }
     
@@ -66,7 +81,7 @@ main{
     @media(max-width: 992px){
         background-size: 40%;
     }
-    @media(max-width: @screen-sm){
+    @media(max-width: 576px){
         background-size: 0%;
     }
     
@@ -133,9 +148,12 @@ main{
 
 .about-printer{
     margin: 40px 0;
+    width: 422px;
+    height: 97px;
     
-    @media(max-width: @screen-sm){
+    @media(max-width: 576px){
         width: 90%;
+        height: 90%;
         display: table;
         margin-left: auto;
         margin-right: auto;
@@ -154,7 +172,7 @@ main{
     margin-bottom: 100px;
     border: none;
     
-    @media(max-width: 320px){
+    @media(max-width: @screen-sm){
         margin-bottom: 30px;
     }
     
@@ -179,21 +197,21 @@ main{
     .fname{
         width: 25%;
         
-        @media(max-width: 320px){
+        @media(max-width: 576px){
             width: 100%;
         }
     }
     .femail{
         width: 40%;
         
-        @media(max-width: 320px){
+        @media(max-width: 576px){
             width: 100%;
         }
     }
     .btn-wrap{
         float: right;
         
-        @media(max-width: @screen-sm){
+        @media(max-width: 576px){
             float: none;
             display: table;
             margin-left: auto;
